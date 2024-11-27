@@ -1,0 +1,6 @@
+{
+    "https_port": 443,
+    "http_port": 80,
+    "server_end_point": "server",
+    "superior_env": true
+}

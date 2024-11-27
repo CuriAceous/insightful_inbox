@@ -1,0 +1,24 @@
+Welcome to general_server !
+
+This is a basic ready-to-build-on template which packs some basic feature to make a flash starting
+
+Usage:
+    node ./app.js [options] [arguments]
+
+Options:
+    -h, --help           Display this help message and exit
+    -v, --version        Display the program's version number and exit
+    [insert other available options here]
+
+Arguments:
+    [insert any required or optional arguments here]
+
+Examples:
+    [program_name] --option argument
+    [program_name] -option argument
+    [program_name] argument1 argument2
+    [insert additional examples of how to use the program here]
+
+Please refer to the program's documentation for further information and instructions.
+
+[insert any other relevant information here, such as a brief summary of the program's main features or a disclaimer about its limitations]

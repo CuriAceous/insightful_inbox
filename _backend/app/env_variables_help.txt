@@ -1,0 +1,12 @@
+    =====================================
+    This is help for ENVIROMENT VARIABLES
+    =====================================
+
+    PORT=8080           specify custom port
+    SPA=true            runs the spa with default server endpoint
+    SPA=endpoint        serve single page application,default server endpoint in default.json
+    DEV=true            run in development mode
+    SSL=true            runs the server in https mode
+
+
+    > if PORT=8012.23   then decimal part will be ignored ( PORT=8012 )

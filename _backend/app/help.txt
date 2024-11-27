@@ -1,0 +1,55 @@
+Welcome to general_server !
+
+This is a basic ready-to-build-on template which packs some basic feature to make a flash starting
+
+Usage:
+    node ./app.js [options]
+
+Options:
+    -h, --help              "Display this help message and exit"
+
+    -p, --port              "Port to run the express server"
+    
+    --https                 "Run the server with https connection (ssl certificate)"
+    
+    --spa                   "Runs the express server first serve SINGLE_PAGE_APPLICATION"
+    
+    -e, --server_end_point  "Sets the server end point for single page application"
+
+    -d, --dev               "Runs the server in development mode"
+    
+Examples:
+
+    node ./app.js --port 8090
+    ( runs the server at port 8090 )
+
+    node ./app.js --p 8090
+    ( runs the server at port 8090 )
+
+    node ./app.js --help
+    ( displays the help message and exit )
+
+    node ./app.js -h
+    ( displays the help message and exit )
+
+    node ./app.js --https -p 443
+    ( runs https server on port 443 )
+
+    node ./app.js --dev
+    ( runs the server in development mode )
+
+    node ./app.js -d
+    ( runs the server in development mode )
+
+    node ./app.js --spa
+    ( server serves the single_page_app )
+
+    node ./app.js -e server
+    ( this sets the server endpoint for spa to /server )
+
+    node ./app.js --server_end_point server 
+    ( this sets the server endpoint for spa to /server )
+
+
+
+Please refer to the program's documentation for further information and instructions.

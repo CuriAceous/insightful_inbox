@@ -11,30 +11,30 @@ source ./utils/log.sh
 echo -e ${gray}${bold}"\n\n################"
 echo ${aqua}INSIGHTFUL INBOX
 echo -e ${gray}${bold}"################\n\n"
-sleep 3
+# sleep 2
 
 # getting teminal width
 width=$(tput cols)
 
 log Building Front End
-sleep 3
+# sleep 2
 cd frontend
 npm run build
 
 # copying static build files
 log Copying Static Build Files
-sleep 4
+# sleep 2
 cd ../_backend/
 rm -rf spa_frontend
 
 mv ../frontend/build ./spa_frontend
 
 log DONE
-sleep 3
+# sleep 2
 
 # starting website
 log Starting Application
-sleep 5
+# sleep 5
 open http://localhost:80
 
 # starting backend

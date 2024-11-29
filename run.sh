@@ -35,7 +35,7 @@ log DONE
 # starting website
 log Starting Application
 # sleep 5
-open http://localhost:80
+# open http://localhost:80
 
 # starting backend
 

@@ -52,22 +52,31 @@ export default function Writer(props) {
     })
   }
   return (
+    <>
     <div
       style={{
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
+        background:"transparent",
+        paddingTop:"80px"
+        // width:"100%"
       }}
     >
-      <h1
-        style={{
-          textAlign: "center",
-          margin: "20px",
-        }}
-      >
-        Compose Email
-      </h1>
+      <p className="zen-dots-regular" style={{
+      fontSize:"5em",
+      // transform:"rotatez(-90deg)",
+      // left:"-300px",
+      color:"#222",
+      bottom:"0px",
+      // left:"100px",
+      marginTop:"100px",
+      marginLeft:"135px",
+      position:"absolute"
+    }}>
+      COMPOSE EMAIL
+    </p>
       <div
         style={{
           width: "50vw",
@@ -77,11 +86,12 @@ export default function Writer(props) {
       >
         {/* to */}
         <TextField
+        autoFocus
           disabled={sending}
           label="To"
           inputRef={toRef}
           sx={{
-            marginTop: "30px",
+            marginTop: "30px"
           }}
           variant="outlined"
         />
@@ -98,11 +108,15 @@ export default function Writer(props) {
         {/* body */}
         <TextareaAutosize
           disabled={sending}
+          // className="zen-dots-regular" 
           style={{
             minHeight: "50px",
+            // letterSpacing:"2px",
             marginTop: "30px",
-            padding: "10px",
+            padding: "15px",
             fontSize: "16px",
+            background:"transparent",
+            color:"#fff"
           }}
           ref={bodyRef}
         >
@@ -118,7 +132,9 @@ export default function Writer(props) {
           }}
           variant="contained"
         >
-          Send
+          <p style={{
+            fontWeight:"bolder"
+          }} className="zen-dots-regular" >Send</p>
         </Button>
         {sending ? <CircularProgress /> : <></>}
         <Snackbar
@@ -137,5 +153,7 @@ export default function Writer(props) {
         />
       </div>
     </div>
+    
+    </>
   );
 }
